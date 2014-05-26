@@ -30,8 +30,8 @@ describe "Viewing the list of projects" do
     expect(page).to have_text(project3.name)
     
     expect(page).to have_text("$100.00")
-    expect(page).to have_text(project1.target_pledge_amount)
-    expect(page).to have_text(project1.pledging_ends_on)
+    expect(page).to have_text(project1.description)
+    expect(page).to have_text("1 day remaining")
     expect(page).to have_text(project1.website)
   end
 
