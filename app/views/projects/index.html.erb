@@ -1,5 +1,7 @@
 <h1><%= pluralize(@projects.size, 'Project') %></h1>
 
+<%= link_to("Add New Project", new_project_path) %>
+
 <% @projects.each do |project| %>
   <article>
     <header>
@@ -15,11 +17,11 @@
       </tr>
       <tr>
         <th>Pledging ends on:</th>
-        <td><%= format_pledging_ends_on(project) %></td>
+       <td><%= format_pledging_ends_on(project) %></td> 
       </tr>
       <tr>
         <th>Website:</th>
-        <td><%= project.website%></td>
+        <td><%= project.website %></td>
       </tr>
     </table>
   </article>
