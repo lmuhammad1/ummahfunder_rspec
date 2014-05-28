@@ -4,20 +4,23 @@
   </header>
   <h2>Description</h2>
   <p>
-    <%= @project.description %>
+  <%= @project.description %>
   </p>
   <h3>Target Pledge Amount</h3>
   <p>
-    <%= number_to_currency(@project.target_pledge_amount) %>
+  <%= number_to_currency(@project.target_pledge_amount) %>
   </p>
   <h3>Pledging Ends On</h3>
   <p>
-    <%= format_pledging_ends_on(@project) %>
+  <%= format_pledging_ends_on(@project) %>
   </p>
   <h3>Website</h3>
   <p>
-    <%= @project.website %>
+  <%= @project.website %>
   </p>
 </article>
 
-<%= link_to("All Projects", projects_path) %>
+<nav>
+  <%= link_to "All Projects", projects_path %> |
+  <%= link_to "Edit", edit_project_path(@project) %>
+</nav>
