@@ -1,6 +1,7 @@
 <article>
   <header>
     <h1><%= @project.name %></h1>
+    <%= image_tag(@project.image_file_name) %>
   </header>
   <h2>Description</h2>
   <p>
@@ -17,6 +18,10 @@
   <h3>Website</h3>
   <p>
   <%= @project.website %>
+  </p>
+  <h3>Team Members</h3>
+  <p>
+  <%= @project.team_members %>
   </p>
 </article>
 
