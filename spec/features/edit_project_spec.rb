@@ -21,6 +21,8 @@ describe "Editing a project" do
 
     expect(page).to have_text('Updated Project Name')
 
+    expect(page).to have_text('Project successfully updated!')
+
   end
 
   it "does not update the project if it's invalid" do
