@@ -10,7 +10,7 @@
   </p>
   <p>
   <%= f.label :target_pledge_amount %><br/>
-  <%= f.number_field :target_pledge_amount %>
+  <%= f.select :target_pledge_amount, Pledge::AMOUNT_LEVELS, prompt: "Pick one" %>
   </p>
   <p>
   <%= f.label :pledging_ends_on %><br/>
